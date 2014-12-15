@@ -1,5 +1,5 @@
 '''
-maxbotix/__init__.py - Python classes for reading from MaxBotix ultrasonic ranging sensors.
+maxbotix - Python classes for reading from MaxBotix ultrasonic ranging sensors.
 
 Copyright (C) 2014 Simon D. Levy
 
