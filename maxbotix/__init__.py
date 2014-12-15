@@ -1,5 +1,5 @@
 '''
-maxbotix - Python classes for reading from MaxBotix ultrasonic ranging sensors.
+Python classes for reading from MaxBotix ultrasonic ranging sensors.
 
 Copyright (C) 2014 Simon D. Levy
 
