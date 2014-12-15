@@ -31,14 +31,15 @@ class _MaxBotix(object):
 
         while self._running:
 
-            c = self._device.read(1)
+            # Get ASCII code for charcter from sensor
+            c = ord(self._device.read(1))
 
-            if c == 'R':
+            if c == 82:      # 'R'
 
                 self._ready = True
                 self._digits = ''
 
-            elif ord(c) == 13:    # carriage return
+            elif c == 13:    # carriage return
 
                 if self._ready:
                     self.handleUpdate(int(self._digits))
@@ -47,7 +48,7 @@ class _MaxBotix(object):
 
             else:
                 
-                self._digits += c
+                self._digits += chr(c)
 
 
     def start(self):
