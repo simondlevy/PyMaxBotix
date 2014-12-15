@@ -31,8 +31,15 @@ class _MaxBotix(object):
 
         while self._running:
 
-            # Get ASCII code for charcter from sensor
-            c = ord(self._device.read(1))
+            # Get byte from sensor
+            c = self._device.read(1)
+
+            # Quit on failure
+            if not c:
+                break
+
+            # Convert to ASCII code
+            c = ord(c)
 
             if c == 82:      # 'R'
 
