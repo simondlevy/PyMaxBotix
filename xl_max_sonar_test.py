@@ -20,7 +20,7 @@ PORT = '/dev/ttyUSB0' 	                  # Linux
 #PORT = '/dev/tty.usbserial-A7Y5QR09'	  # Mac OS X (Darwin)
 #PORT =  'COM8'                           # Windows
 
-RUNTIME_SECONDS = 5
+RUNTIME_SECONDS = 10 
 
 from maxbotix import XL_MaxSonar
 from time import sleep
