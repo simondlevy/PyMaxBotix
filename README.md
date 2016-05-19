@@ -1,4 +1,4 @@
-maxbotix
+PyMaxBotix
 ========
 
 maxbotix.py - Python classes for reading from MaxBotix ultrasonic ranging sensors
